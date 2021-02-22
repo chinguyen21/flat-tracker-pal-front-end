@@ -1,0 +1,200 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.welcome {
+  color: #9feded;
+  padding-top: 10px;
+  text-align: center;
+  font-size: calc(10px + 2vmin);
+  color: #9feded;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Login Signup */
+.auth {
+  font-size: 50px;
+  padding-bottom:1em;
+  color: antiquewhite;
+}
+
+.submit {
+  text-align:center;
+}
+
+.error {
+  color:red;
+  text-align: center;
+  font-size: 20px;
+  font-family:fantasy;
+}
+
+
+
+
+/* Authorization Container*/
+/* .container {
+  min-height: 1000px;
+  padding-top:100px;
+  width: 70%;
+  display: center;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+.left {
+  margin-left: 30px;
+  margin-right: 30px;
+  width: 500px;
+  height: 500px;
+}
+.right {
+  margin-left: 30px;
+  margin-right: 30px;
+  width: auto;
+  height: 700px;
+  display:block;
+} */
+
+
+/* Edit Box2 Container in Breakfast Component*/
+/* .sub-left {
+  width: 200px;
+  height: 200px;
+  font: 5px;
+  text-align: center;
+  top: 50%;
+  margin: 0;
+  position: relative;
+}
+.sub-right {
+  width: 700px;
+  min-height: 200px;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-size: 22px;
+}
+
+.table-row {
+  height: 30px;
+} */
+
+.rowC {
+  display:flex; 
+  flex-direction:row;
+}
+
+.container-1 {
+  /* color: white; */
+  margin-left: 30px;
+  margin-right: 20px;
+  width: 30%;
+  height: 800px;
+  text-align: center;
+}
+
+.calendar {
+  height: 300px;
+}
+
+.container-2 {
+  color: white;
+  margin-left: 20px;
+  margin-right: 30px;
+  width: 70%;
+  height: 700px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.meal {
+  width: 200px;
+  /* top: 50%; */
+  color: #9feded;
+  font-size: 30px;
+  margin-left: 10px;
+  margin-right: 30px;
+  text-align: center;
+  position: relative;
+}
+
+.meal span {
+  position: absolute;
+  top: 40%;
+}
+
+.s-meal {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.table-calories {
+  border-top: 1px solid;
+    margin-left: 50px;
+  margin-right: 50px;
+}
+
+th,td {
+  padding: 10px;
+}
+
+.choose-meal {
+  font-size: 12px;
+}
+
+input {
+  color: rgb(173, 173, 187) !important;
+}
+
+.display-foods {
+  width: 300px;
+}
+
+.calories {
+  color: green;
+  padding: 10px;
+  position: absolute;
+  right: 20px;
+  background-color: blanchedalmond;
+}
+
+.notification {
+  color: green;
+  padding-top: 30px;
+  font-style: italic;
+  
+}
+
+
+.container-news {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  padding-top: 150px;
+  align-items: center;
+}
+
+.sub-container {
+  padding: 50px;
+}
+
+.news-header {
+  padding-top: 60px;
+  color: rgb(227, 233, 227);
+}
