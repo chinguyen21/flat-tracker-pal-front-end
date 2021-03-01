@@ -12,7 +12,6 @@ import Lunch from '../meals/Lunch'
 import Dinner from '../meals/Dinner'
 
 const Authorization = ({user, setUser}) => {
-  // const a = user.target_calories
 
   const[date, setDate] =useState(new Date())
   const [foods,setFoods] = useState([])

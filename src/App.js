@@ -35,6 +35,17 @@ const App = () => {
     <div className={styling().root}>
 
       <Router>
+        {loggedIn ? 
+        <AppBar position="static">
+          <Toolbar style={{background: "#9feded"}}>
+            <Typography variant="h6" className={styling().title} >
+              <Button style={{ textDecoration: 'none', color: '#3b8050'}}> Flat Tracker Pal</Button>
+            </Typography>
+            <Button onClick={handleLogout} style={{ color: '#3b8050' }}>Log Out</Button>
+            <Avatar>{user.name!==undefined ? user.name.slice(0,1) : null}</Avatar>
+          </Toolbar>
+        </AppBar>
+        :
         <AppBar position="static">
           <Toolbar style={{background: "#9feded"}}>
             <Typography variant="h6" className={styling().title} >
@@ -42,20 +53,20 @@ const App = () => {
             </Typography>
             <Button><Link to= "/login" style={{ textDecoration: 'none', color: '#3b8050'}}>Log In</Link></Button>
             <Button><Link to= "/signup" style={{ textDecoration: 'none', color: '#3b8050'}}>Sign Up</Link></Button>
-            <Button onClick={handleLogout} style={{ color: '#3b8050' }}>Log Out</Button>
-            <Avatar>{user.name!==undefined ? user.name.slice(0,1) : null}</Avatar>
           </Toolbar>
         </AppBar>
+        }
+
 
         <Switch>
           <Route exact path='/'>
             {loggedIn ? <Authorization user={user} setUser={setUser}/> : <Unauthorization/>}
           </Route>
           <Route exact path='/login'>
-            {loggedIn ? <Redirect to="/" /> : <Login setUser={setUser} setLoggedIn={setLoggedIn}/>}
+            <Login setUser={setUser} setLoggedIn={setLoggedIn}/>
           </Route>
           <Route exact path='/signup'>
-            {loggedIn ? <Redirect to="/" /> : <Signup setUser={setUser} setLoggedIn={setLoggedIn}/>}
+            <Signup setUser={setUser} setLoggedIn={setLoggedIn}/>
           </Route>
         </Switch>
       </Router>
