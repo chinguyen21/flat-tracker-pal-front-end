@@ -58,15 +58,15 @@ const App = () => {
         }
 
 
-        <Switch>
+         <Switch>
           <Route exact path='/'>
             {loggedIn ? <Authorization user={user} setUser={setUser}/> : <Unauthorization/>}
           </Route>
           <Route exact path='/login'>
-            <Login setUser={setUser} setLoggedIn={setLoggedIn}/>
+            {loggedIn ? <Redirect to="/" /> : <Login setUser={setUser} setLoggedIn={setLoggedIn}/>}
           </Route>
           <Route exact path='/signup'>
-            <Signup setUser={setUser} setLoggedIn={setLoggedIn}/>
+            {loggedIn ? <Redirect to="/" /> : <Signup setUser={setUser} setLoggedIn={setLoggedIn}/>}
           </Route>
         </Switch>
       </Router>
