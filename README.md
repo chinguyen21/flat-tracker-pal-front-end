@@ -44,5 +44,12 @@ A tracker calories application inspired by my personal need. It was made with Re
 
 ![](preview2.png)
 
+
+
+
+## DEMO
+
+[DEMO](https://flat-tracker-pal.netlify.app/)
+
 ### Built by Chi Nguyen and Avelon Pang
 
